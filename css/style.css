@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: calc(100vh + 100px);
+    background-color: #97D9E1;
+    background-image: linear-gradient(180deg, #D9AFD9 0%, #97D9E1 100%);
+    overflow-x: hidden;
+
+
+}
+
+@media (max-width: 500px) {
+    body{
+        overflow-y: hidden;
+    }
+}
+
+.special {
+    font-size: 8vw;
+}
+
+div .hbd {
+    max-width: 95vw;
+    animation: hbd 5s linear ;
+    transform: translateX(5%);
+
+}
+
+div .lab {
+    margin-top: -5rem;
+    max-width: 80vw;
+    transform: translateX(10%);
+    filter: blur(30px);
+
+    animation: blur 7s linear;
+}
+
+div .wish span {
+    color: #f82793;
+}
+
+div .wish {
+    margin-top: -8rem;
+    font-size: 5vw;
+    font-family: 'Rancho', cursive;
+    padding: auto 1rem;
+    text-align: center;
+    color: #966600;
+    text-shadow: 12px 12px 12px white;
+    animation: outscreen 8s linear;
+
+}
+
+
+
+
+
+
+.baloon {
+    background: url(/static/baloon.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-size: cover;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: baloon 1s linear;
+}
+
+.hearts {
+    background: url(/static/icons8-heart-64.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-size: cover;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: heart 10s linear;
+}
+
+.heart-baloon {
+    background: url(/static/heart-baloon.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-size: cover;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: hballoon 10s linear;
+
+
+}
+
+.heart2 {
+    background: url(/static/heart.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-size: cover;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: heart 10s linear;
+
+}
+
+.baloon2 {
+    background: url(/static/red.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-size: cover;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: heart 10s linear;
+
+}
+
+
+@keyframes heart {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+
+    100% {
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+
+    }
+}
+
+@keyframes hballoon {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        transform: scale(1.5), translate(-50%, 80%);
+    }
+
+    10% {
+        transform: scale(0.5) translate(-50%, 100%);
+    }
+
+    20% {
+        transform: scale(1.3) translate(-50%, 150%);
+    }
+
+    30% {
+        transform: scale(1) translate(-50%, 200%);
+    }
+
+    40% {
+        transform: scale(2) translate(-50%, 250%);
+    }
+
+    50% {
+        transform: scale(0.5) translate(-50%, 300%);
+    }
+
+    60% {
+        transform: scale(2) translate(-50%, 350%);
+    }
+
+    70% {
+        transform: scale(1.2) translate(-50%, 400%);
+    }
+
+    80% {
+        transform: scale(0.3) translate(-50%, 450%);
+    }
+
+    90% {
+        transform: scale(1.9) translate(-50%, 500%);
+    }
+
+    100% {
+        /* transform: translate(-50%, -5000%); */
+        transform: translate(-50%, 1000%);
+        opacity: 0;
+    }
+}
+
+@keyframes baloon {
+    0% {
+        transform: scale(0.5);
+    }
+
+    30% {
+        transform: scale(1.7);
+    }
+
+    70% {
+        transform: scale(1.7);
+    }
+
+    96% {
+        transform: scale(1.7);
+    }
+
+    100% {
+        transform: scale(10);
+    }
+}
+
+@keyframes blur {
+    0% {
+        /* filter: blur(30px); */
+        opacity: 0;
+    }
+
+    70% {
+        /* filter: blur(30px); */
+        opacity: 0;
+    }
+
+    100% {
+        /* filter: blur(25px); */
+        opacity: 1;
+    }
+}
+
+@keyframes outscreen {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    80% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes hbd {
+    0% {
+        transform: translateY(-100%) translateX(5%);
+
+    }
+
+    100% {
+        transform: translateY(0%) translateX(5%);
+    }
+}
