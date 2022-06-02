@@ -63,7 +63,7 @@ div .wish {
 
 
 .baloon {
-    background: url(static/baloon.png);
+    background: url(../static/baloon.png);
     width: 100px;
     height: 100px;
     position: absolute;
@@ -76,7 +76,7 @@ div .wish {
 }
 
 .hearts {
-    background: url(static/icons8-heart-64.png);
+    background: url(../static/icons8-heart-64.png);
     width: 100px;
     height: 100px;
     position: absolute;
@@ -89,7 +89,7 @@ div .wish {
 }
 
 .heart-baloon {
-    background: url(static/heart-baloon.png);
+    background: url(../static/heart-baloon.png);
     width: 100px;
     height: 100px;
     position: absolute;
@@ -104,7 +104,7 @@ div .wish {
 }
 
 .heart2 {
-    background: url(static/heart.png);
+    background: url(../static/heart.png);
     width: 100px;
     height: 100px;
     position: absolute;
@@ -118,7 +118,7 @@ div .wish {
 }
 
 .baloon2 {
-    background: url(static/red.png);
+    background: url(../static/red.png);
     width: 100px;
     height: 100px;
     position: absolute;
