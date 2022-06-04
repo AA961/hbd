@@ -46,13 +46,19 @@ div .name {
 
 .words {
     margin-top: -10rem;
-    font-size: 5vw;
+    font-size: 6vw;
     font-family: 'Rancho', cursive;
     padding: auto 1rem;
     text-align: center;
     color: #966600;
     text-shadow: 12px 12px 12px white;
     font-weight: 800;
+}
+
+@media (max-width:400px) {
+    .words{
+        font-size: 4vw;
+    }
 }
 
 .word1 {

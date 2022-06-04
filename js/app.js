@@ -109,7 +109,7 @@ setTimeout(() => {
     setInterval(() => {
         baloon()
     }, 300);
-}, 30000);
+}, 36000);
 
 
 setTimeout(() => {
@@ -119,4 +119,4 @@ setTimeout(() => {
         heartBaloon()
     }, 800);
 
-}, 32000);
+}, 38000);
