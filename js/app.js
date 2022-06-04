@@ -1,4 +1,4 @@
-let body = document.querySelector("body")
+let body = document.querySelector(".main")
 
 
 body.addEventListener("click", () => {
@@ -10,7 +10,7 @@ body.addEventListener("click", () => {
     setTimeout(() => {
         audio.play()
 
-    }, 900);
+    }, 800);
 
 
     const x = event.offsetX
@@ -109,7 +109,7 @@ setTimeout(() => {
     setInterval(() => {
         baloon()
     }, 300);
-}, 5000);
+}, 30000);
 
 
 setTimeout(() => {
@@ -119,4 +119,4 @@ setTimeout(() => {
         heartBaloon()
     }, 800);
 
-}, 7000);
+}, 32000);
