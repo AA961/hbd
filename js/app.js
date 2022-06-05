@@ -1,7 +1,7 @@
 let body = document.querySelector(".main")
 
-
 body.addEventListener("click", () => {
+
 
     let audio = new Audio()
 
@@ -10,7 +10,7 @@ body.addEventListener("click", () => {
     setTimeout(() => {
         audio.play()
 
-    }, 800);
+    }, 820);
 
 
     const x = event.offsetX
@@ -68,6 +68,7 @@ function hearts() {
 }
 
 function heartBaloon() {
+
     let heart = document.createElement("span")
     heart.style.left = Math.random() * 1000 + "px"
     heart.style.top = Math.random() * 3000 + "px"
@@ -109,14 +110,19 @@ setTimeout(() => {
     setInterval(() => {
         baloon()
     }, 300);
-}, 36000);
+}, 29000);
 
 
 setTimeout(() => {
     setInterval(() => {
         hearts()
         heart2()
-        heartBaloon()
-    }, 800);
+    }, 500);
 
-}, 38000);
+}, 32000);
+
+setTimeout(() => {
+    setInterval(() => {
+        heartBaloon()
+    }, 300);
+}, 10000);

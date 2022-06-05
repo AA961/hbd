@@ -5,9 +5,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
+
 .main {
     height: calc(100vh + 2000px);
     background-color: #97D9E1;
@@ -55,8 +57,15 @@ div .name {
     font-weight: 800;
 }
 
+body:fullscreen .words  , body:fullscreen .name{
+
+    margin-top: -4rem;
+
+
+}
+
 @media (max-width:400px) {
-    .words{
+    .words {
         font-size: 4vw;
     }
 }
@@ -175,30 +184,30 @@ div .name {
 
 .word10 .first .fifth-c {
 
-    animation: special 24s linear !important;
+    animation: special 23s linear !important;
 }
 
 .word10 .first .fourth-c {
 
-    animation: special 26s linear !important;
+    animation: special 24s linear !important;
 }
 
 .word10 .first .third-c {
-    animation: special 28s linear !important;
+    animation: special 25s linear !important;
 }
 
 .word10 .first .second-c {
-    animation: special 30s linear !important;
+    animation: special 26s linear !important;
 }
 
 .word10 .first .first-c {
-    animation: special 32s linear !important;
+    animation: special 27s linear !important;
 }
 
 .word10 .second {
     color: #f82793;
     font-size: 7vw;
-    animation: girl 35s linear;
+    animation: girl 29s linear;
 }
 
 
@@ -410,13 +419,16 @@ div .name {
 
 @keyframes outscreen-bottom {
     0% {
-        transform: translateY(600px);
+        transform: translateY(2000px);
         opacity: 0;
     }
 
-    80% {
-        transform: translateY(600px);
+    79%{
         opacity: 0;
+    }
+    80% {
+        transform: translateY(2000px);
+        opacity: 0.1;
     }
 
     100% {
@@ -462,7 +474,8 @@ div .name {
         font-size: 1vw;
     }
 
-    90% {
+    93% {
+        transform: translateX(-98vw);
         font-size: 7vw;
 
     }
